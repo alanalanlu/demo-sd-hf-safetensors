@@ -16,6 +16,8 @@ def init():
     
     model = DiffusionPipeline.from_pretrained(
         repo_id, 
+        requires_safety_checker = False,
+        safety_checker=None,
         use_safetensors=True,
         torch_dtype=torch.float16,
         scheduler=ddpm
