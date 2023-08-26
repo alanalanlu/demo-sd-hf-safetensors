@@ -10,7 +10,7 @@ app = Potassium("my_app")
 # @app.init runs at startup, and loads models into the app's context
 @app.init
 def init():
-    repo_id="stablediffusionapi/hassaku-hentai-model"
+    repo_id="Meina/MeinaHentai_V4"
 
     ddpm = DDPMScheduler.from_pretrained(repo_id, subfolder="scheduler")
     
