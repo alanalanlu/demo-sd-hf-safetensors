@@ -14,7 +14,6 @@ def download_model():
     DiffusionPipeline.from_pretrained(
         repo_id, 
         use_safetensors=True,
-        requires_safety_checker = False,
         safety_checker=None,
         torch_dtype=torch.float16,
         scheduler=ddpm
