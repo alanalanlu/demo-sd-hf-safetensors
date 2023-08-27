@@ -18,6 +18,8 @@ def download_model():
         torch_dtype=torch.float16,
         scheduler=ddpm
     )
+    DiffusionPipeline.safety_checker = None
+
 
 if __name__ == "__main__":
     download_model()
