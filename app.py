@@ -21,7 +21,7 @@ def init():
         torch_dtype=torch.float16,
         scheduler=ddpm
     ).to("cuda")
-
+    DiffusionPipeline.safety_checker = None
     context = {
         "model": model,
     }
